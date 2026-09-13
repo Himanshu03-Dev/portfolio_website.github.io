@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Himanshu Dev — Python &amp; Django Developer | WordPress Developer</title>
 
-<meta name="description" content="Himanshu Dev — Software Engineer with 3+ years of experience. Python, Django, Django REST Framework, MySQL, WordPress custom themes &amp; plugins, HTML5, CSS3, JavaScript. 20+ live client websites delivered. Based in Gurugram, India.">
+<meta name="description" content="Himanshu Dev — Software Engineer with 3+ years of experience. Python, Django, Django REST Framework, MySQL, WordPress custom themes and plugins, HTML5, CSS3, JavaScript. 20+ live client websites delivered. Based in Gurugram, India.">
 <meta name="author" content="Himanshu Dev">
 <meta name="keywords" content="Himanshu Dev, Python Developer, Django Developer, Django REST Framework, Backend Developer, WordPress Developer, Full Stack Developer, Gurugram, India">
-<meta name="theme-color" content="#07070c">
+<meta name="theme-color" content="#06060b">
 <link rel="canonical" href="https://himanshu03-dev.github.io/portfolio_website.github.io/">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Himanshu Dev — Python &amp; Django Developer">
 <meta property="og:description" content="3+ years building scalable web applications. Python · Django · REST APIs · MySQL · WordPress. 20+ live client websites.">
 <meta property="og:url" content="https://himanshu03-dev.github.io/portfolio_website.github.io/">
-<meta property="og:image" content="https://himanshu03-dev.github.io/portfolio_website.github.io/images/himanshu.jpg">
+<meta property="og:image" content="https://himanshu03-dev.github.io/portfolio_website.github.io/images/profile.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%237c5cff'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='bold' fill='%2307070c' text-anchor='middle'>HD</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%237c5cff'/><text x='50' y='68' font-size='50' font-family='sans-serif' font-weight='bold' fill='%2306060b' text-anchor='middle'>HD</text></svg>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,22 +34,38 @@
   "email": "mailto:drajputhimanshu704@gmail.com",
   "telephone": "+91-8755017490",
   "url": "https://himanshu03-dev.github.io/portfolio_website.github.io/",
+  "image": "https://himanshu03-dev.github.io/portfolio_website.github.io/images/profile.jpg",
   "address": { "@type": "PostalAddress", "addressLocality": "Gurugram", "addressRegion": "Haryana", "addressCountry": "IN" },
-  "sameAs": [
-    "https://www.linkedin.com/in/himanshu-dev-3a57a1219",
-    "https://github.com/Himanshu03-Dev"
-  ],
+  "sameAs": ["https://www.linkedin.com/in/himanshu-dev-3a57a1219", "https://github.com/Himanshu03-Dev"],
   "worksFor": { "@type": "Organization", "name": "Webority Technologies" },
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "Dr. Bhimrao Ambedkar University, Agra" },
-  "knowsAbout": ["Python","Django","Django REST Framework","REST API","MySQL","WordPress","PHP","JavaScript","HTML5","CSS3","Bootstrap","jQuery","SEO","Git"]
+  "knowsAbout": ["Python","Django","Django REST Framework","REST API","MySQL","SQL","WordPress","PHP","JavaScript","HTML5","CSS3","Bootstrap","jQuery","SEO","Git"]
 }
 </script>
 </head>
 <body>
 
+<div id="preloader">
+  <div class="pre-inner">
+    <div class="pre-name" id="preName"></div>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+</div>
+
+<div class="bg-fx" aria-hidden="true">
+  <div class="grid-fx"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="cursor-ring" id="cRing" aria-hidden="true"></div>
+<div class="cursor-dot" id="cDot" aria-hidden="true"></div>
+
 <div id="progress"></div>
 
-<!-- ========== NAV ========== -->
+<!-- ================= NAV ================= -->
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
     <a href="#home" class="logo" aria-label="Himanshu Dev — home">
@@ -61,6 +76,7 @@
     <nav class="nav-links" id="navLinks" aria-label="Main">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#process">Process</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#work">Client Work</a>
@@ -68,6 +84,14 @@
     </nav>
 
     <div class="nav-cta">
+      <button class="kbd-hint" id="openCmd" aria-label="Open quick menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        Quick menu <kbd>Ctrl</kbd><kbd>K</kbd>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-label="Switch theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
       <a class="btn btn-ghost btn-resume" href="assets/Himanshu_Dev_Resume.pdf" download>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Resume
@@ -79,15 +103,8 @@
   </div>
 </header>
 
-<!-- ========== HERO ========== -->
+<!-- ================= HERO ================= -->
 <section class="hero" id="home">
-  <div class="bg-fx">
-    <div class="grid-fx"></div>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-  </div>
-
   <div class="wrap">
     <div class="hero-grid">
       <div>
@@ -104,15 +121,15 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">
+          <a class="btn btn-primary magnetic" href="#projects">
             View my work
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a class="btn btn-ghost" href="assets/Himanshu_Dev_Resume.pdf" download>
+          <a class="btn btn-ghost magnetic" href="assets/Himanshu_Dev_Resume.pdf" download>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download Resume
           </a>
-          <a class="btn btn-wa" href="https://wa.me/918755017490?text=Hi%20Himanshu%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity." target="_blank" rel="noopener">
+          <a class="btn btn-wa magnetic" href="https://wa.me/918755017490?text=Hi%20Himanshu%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity." target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.26 4.86L2 22l5.3-1.23A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
             WhatsApp
           </a>
@@ -136,7 +153,8 @@
 
       <aside class="hero-card reveal">
         <div class="avatar-wrap">
-          <img src="images/himanshu.jpg" alt="Himanshu Dev" onerror="this.outerHTML='&lt;div class=&quot;avatar-fallback&quot;&gt;&lt;span&gt;HD&lt;/span&gt;&lt;/div&gt;'">
+          <img src="images/profile.jpg" alt="Himanshu Dev" width="132" height="132"
+               onerror="this.onerror=null;this.src='images/himanshu.jpg'">
         </div>
         <h3>Himanshu Dev</h3>
         <p class="role">Software Development Engineer</p>
@@ -147,20 +165,20 @@
             <span class="v">Gurugram, India</span>
           </div>
           <div class="fact">
+            <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Local time</span>
+            <span class="v mono" id="clock">--:--</span>
+          </div>
+          <div class="fact">
             <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Experience</span>
             <span class="v">3+ Years</span>
           </div>
           <div class="fact">
-            <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Notice Period</span>
+            <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18"/><rect x="3" y="4" width="18" height="18" rx="2"/></svg> Notice period</span>
             <span class="v">1 Month</span>
           </div>
           <div class="fact">
             <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Availability</span>
             <span class="v ok">Open to work</span>
-          </div>
-          <div class="fact">
-            <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> Focus</span>
-            <span class="v">Python · Django</span>
           </div>
         </div>
       </aside>
@@ -170,17 +188,14 @@
       <div class="stat"><div class="num grad-text" data-count="3" data-suffix="+">0</div><div class="lbl">Years Experience</div></div>
       <div class="stat"><div class="num grad-text" data-count="20" data-suffix="+">0</div><div class="lbl">Websites Delivered</div></div>
       <div class="stat"><div class="num grad-text" data-count="25" data-suffix="+">0</div><div class="lbl">Technologies</div></div>
-      <div class="stat"><div class="num grad-text" data-count="3" data-suffix="">0</div><div class="lbl">Certifications</div></div>
+      <div class="stat"><div class="num grad-text" data-count="5" data-suffix="">0</div><div class="lbl">Industries Served</div></div>
     </div>
   </div>
 </section>
 
-<!-- ========== MARQUEE ========== -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track" id="marquee"></div>
-</div>
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
 
-<!-- ========== ABOUT ========== -->
+<!-- ================= ABOUT ================= -->
 <section id="about">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -214,25 +229,40 @@
         </p>
       </div>
 
-      <div class="now-card reveal">
-        <h4><span class="pulse"></span> Currently</h4>
-        <ul class="now-list">
-          <li>Building backend modules and REST APIs with <strong>Django &amp; Django REST Framework</strong></li>
-          <li>Practising <strong>SQL query optimization</strong> and relational database design in MySQL</li>
-          <li>Working through <strong>Data Structures &amp; Algorithms</strong> in Python</li>
-          <li>Exploring <strong>cloud-ready Django deployments</strong> and clean project architecture</li>
-          <li>Maintaining 20+ live WordPress sites in production at Webority</li>
-        </ul>
+      <div>
+        <div class="now-card reveal">
+          <h4><span class="pulse"></span> Currently</h4>
+          <ul class="now-list">
+            <li>Building backend modules and REST APIs with <strong>Django &amp; Django REST Framework</strong></li>
+            <li>Practising <strong>SQL query optimization</strong> and relational database design in MySQL</li>
+            <li>Working through <strong>Data Structures &amp; Algorithms</strong> in Python</li>
+            <li>Exploring <strong>cloud-ready Django deployments</strong> and clean project architecture</li>
+            <li>Maintaining 20+ live WordPress sites in production at Webority</li>
+          </ul>
+        </div>
+
+        <div class="gh-card reveal" id="ghCard" hidden>
+          <div class="top">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+            GitHub
+            <span class="live"><span class="pulse"></span> live</span>
+          </div>
+          <div class="gh-grid">
+            <div><b id="ghRepos">–</b><span>Repos</span></div>
+            <div><b id="ghFollowers">–</b><span>Followers</span></div>
+            <div><b id="ghYears">–</b><span>Years on GH</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========== SKILLS ========== -->
+<!-- ================= SKILLS ================= -->
 <section id="skills">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Tech Stack</span>
+      <span class="eyebrow">Tech stack</span>
       <h2 class="sec-title">Skills &amp; tools</h2>
       <p class="sec-sub">Honest levels — what I use daily, what I'm building with, and what I'm still growing into.</p>
     </div>
@@ -246,23 +276,23 @@
 
     <div class="skill-panel active" id="panel-py">
       <div class="skill-grid">
-        <div class="skill-card"><div class="top"><span class="name">Python</span><span class="lvl">Core · OOP</span></div><div class="bar"><i data-w="80"></i></div><div class="tags">OOP, file handling, exception handling, modules, list/dict comprehensions</div></div>
+        <div class="skill-card"><div class="top"><span class="name">Python</span><span class="lvl">Core · OOP</span></div><div class="bar"><i data-w="80"></i></div><div class="tags">OOP, file handling, exception handling, modules, comprehensions</div></div>
         <div class="skill-card"><div class="top"><span class="name">Django</span><span class="lvl">MVT · ORM</span></div><div class="bar"><i data-w="78"></i></div><div class="tags">Models, ORM, admin, authentication, middleware, templates, migrations</div></div>
         <div class="skill-card"><div class="top"><span class="name">Django REST Framework</span><span class="lvl">APIs</span></div><div class="bar"><i data-w="72"></i></div><div class="tags">Serializers, class-based views, permissions, JWT auth, pagination, filtering</div></div>
-        <div class="skill-card"><div class="top"><span class="name">REST API Design</span><span class="lvl">Build &amp; Integrate</span></div><div class="bar"><i data-w="82"></i></div><div class="tags">CRUD endpoints, JSON handling, auth keys, error states, Postman testing</div></div>
-        <div class="skill-card"><div class="top"><span class="name">Python Libraries</span><span class="lvl">Data &amp; Automation</span></div><div class="bar"><i data-w="68"></i></div><div class="tags">Pandas, NumPy, Requests, BeautifulSoup, OpenPyXL, Matplotlib</div></div>
-        <div class="skill-card"><div class="top"><span class="name">Software Design</span><span class="lvl">Principles</span></div><div class="bar"><i data-w="75"></i></div><div class="tags">OOP design, MVC/MVT architecture, clean code, reusable components</div></div>
+        <div class="skill-card"><div class="top"><span class="name">REST API design</span><span class="lvl">Build &amp; integrate</span></div><div class="bar"><i data-w="82"></i></div><div class="tags">CRUD endpoints, JSON handling, auth keys, error states, Postman testing</div></div>
+        <div class="skill-card"><div class="top"><span class="name">Python libraries</span><span class="lvl">Data &amp; automation</span></div><div class="bar"><i data-w="68"></i></div><div class="tags">Pandas, NumPy, Requests, BeautifulSoup, OpenPyXL, Matplotlib</div></div>
+        <div class="skill-card"><div class="top"><span class="name">Software design</span><span class="lvl">Principles</span></div><div class="bar"><i data-w="75"></i></div><div class="tags">OOP design, MVC/MVT architecture, clean code, reusable components</div></div>
       </div>
     </div>
 
     <div class="skill-panel" id="panel-wp">
       <div class="skill-grid">
         <div class="skill-card"><div class="top"><span class="name">WordPress</span><span class="lvl">Expert</span></div><div class="bar"><i data-w="94"></i></div><div class="tags">Custom themes from scratch, child themes, custom post types, Gutenberg blocks</div></div>
-        <div class="skill-card"><div class="top"><span class="name">Plugin Development</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="86"></i></div><div class="tags">Hooks &amp; filters, plugin customization, troubleshooting, third-party integrations</div></div>
-        <div class="skill-card"><div class="top"><span class="name">PHP</span><span class="lvl">WordPress Dev</span></div><div class="bar"><i data-w="76"></i></div><div class="tags">Theme &amp; plugin logic, template hierarchy, WP query, custom functions</div></div>
-        <div class="skill-card"><div class="top"><span class="name">Page Builders</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="88"></i></div><div class="tags">Elementor, WPBakery, Advanced Custom Fields (ACF), Contact Form 7</div></div>
+        <div class="skill-card"><div class="top"><span class="name">Plugin development</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="86"></i></div><div class="tags">Hooks &amp; filters, plugin customization, troubleshooting, integrations</div></div>
+        <div class="skill-card"><div class="top"><span class="name">PHP</span><span class="lvl">WordPress dev</span></div><div class="bar"><i data-w="76"></i></div><div class="tags">Theme &amp; plugin logic, template hierarchy, WP_Query, custom functions</div></div>
+        <div class="skill-card"><div class="top"><span class="name">Page builders</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="88"></i></div><div class="tags">Elementor, WPBakery, Advanced Custom Fields, Contact Form 7</div></div>
         <div class="skill-card"><div class="top"><span class="name">WooCommerce</span><span class="lvl">Intermediate</span></div><div class="bar"><i data-w="72"></i></div><div class="tags">Product setup, checkout customization, payment gateway integration</div></div>
-        <div class="skill-card"><div class="top"><span class="name">SEO &amp; Performance</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="85"></i></div><div class="tags">On-page &amp; off-page SEO, schema markup, Core Web Vitals, caching, Yoast</div></div>
+        <div class="skill-card"><div class="top"><span class="name">SEO &amp; performance</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="85"></i></div><div class="tags">On-page &amp; off-page SEO, schema markup, Core Web Vitals, caching, Yoast</div></div>
       </div>
     </div>
 
@@ -270,10 +300,10 @@
       <div class="skill-grid">
         <div class="skill-card"><div class="top"><span class="name">HTML5</span><span class="lvl">Expert</span></div><div class="bar"><i data-w="95"></i></div><div class="tags">Semantic markup, accessibility basics, forms, SEO-friendly structure</div></div>
         <div class="skill-card"><div class="top"><span class="name">CSS3</span><span class="lvl">Expert</span></div><div class="bar"><i data-w="92"></i></div><div class="tags">Flexbox, Grid, animations, responsive &amp; cross-browser design</div></div>
-        <div class="skill-card"><div class="top"><span class="name">JavaScript (ES6)</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="80"></i></div><div class="tags">DOM, events, fetch/AJAX, form validation, ES6 syntax</div></div>
+        <div class="skill-card"><div class="top"><span class="name">JavaScript (ES6)</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="80"></i></div><div class="tags">DOM, events, fetch/AJAX, form validation, modern syntax</div></div>
         <div class="skill-card"><div class="top"><span class="name">jQuery</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="84"></i></div><div class="tags">Plugins, animations, interactivity, legacy codebase maintenance</div></div>
         <div class="skill-card"><div class="top"><span class="name">Bootstrap</span><span class="lvl">Expert</span></div><div class="bar"><i data-w="90"></i></div><div class="tags">Grid system, components, utilities, custom theming</div></div>
-        <div class="skill-card"><div class="top"><span class="name">Responsive Design</span><span class="lvl">Expert</span></div><div class="bar"><i data-w="93"></i></div><div class="tags">Mobile-first, fluid layouts, cross-device &amp; cross-browser testing</div></div>
+        <div class="skill-card"><div class="top"><span class="name">Responsive design</span><span class="lvl">Expert</span></div><div class="bar"><i data-w="93"></i></div><div class="tags">Mobile-first, fluid layouts, cross-device &amp; cross-browser testing</div></div>
       </div>
     </div>
 
@@ -283,14 +313,33 @@
         <div class="skill-card"><div class="top"><span class="name">SQL</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="78"></i></div><div class="tags">SELECT/JOIN/GROUP BY, subqueries, data troubleshooting on live systems</div></div>
         <div class="skill-card"><div class="top"><span class="name">SQLite</span><span class="lvl">Intermediate</span></div><div class="bar"><i data-w="70"></i></div><div class="tags">Local development database for Django projects</div></div>
         <div class="skill-card"><div class="top"><span class="name">Git &amp; GitHub</span><span class="lvl">Advanced</span></div><div class="bar"><i data-w="82"></i></div><div class="tags">Feature branching, pull requests, code reviews, team workflows</div></div>
-        <div class="skill-card"><div class="top"><span class="name">Tools</span><span class="lvl">Daily driver</span></div><div class="bar"><i data-w="88"></i></div><div class="tags">VS Code, Spyder, Postman, cPanel, hosting &amp; domain management</div></div>
-        <div class="skill-card"><div class="top"><span class="name">Ways of working</span><span class="lvl">Agile</span></div><div class="bar"><i data-w="86"></i></div><div class="tags">Sprint planning, code reviews, client demos, documentation, AI tools (ChatGPT, Copilot)</div></div>
+        <div class="skill-card"><div class="top"><span class="name">Tooling</span><span class="lvl">Daily driver</span></div><div class="bar"><i data-w="88"></i></div><div class="tags">VS Code, Spyder, Postman, cPanel, hosting &amp; domain management</div></div>
+        <div class="skill-card"><div class="top"><span class="name">Ways of working</span><span class="lvl">Agile</span></div><div class="bar"><i data-w="86"></i></div><div class="tags">Sprint planning, code reviews, client demos, documentation, estimation</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========== EXPERIENCE ========== -->
+<!-- ================= PROCESS ================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How I work</span>
+      <h2 class="sec-title">From brief to live — <span class="grad-text">and after</span></h2>
+      <p class="sec-sub">The same five steps behind every site I've shipped. Most of the value sits in the last one.</p>
+    </div>
+
+    <div class="proc-grid">
+      <article class="proc reveal"><div class="n">01</div><h4>Understand</h4><p>Sit with the requirement before touching code — what the business actually needs, who the user is, what success looks like.</p></article>
+      <article class="proc reveal"><div class="n">02</div><h4>Structure</h4><p>Plan the data, page structure and content model first. A clear structure is what makes a site easy to extend later.</p></article>
+      <article class="proc reveal"><div class="n">03</div><h4>Build</h4><p>Clean, reusable code — custom themes and modules rather than bloated plugin stacks. Responsive and cross-browser from day one.</p></article>
+      <article class="proc reveal"><div class="n">04</div><h4>Optimize</h4><p>Page-speed work, image and asset optimization, caching, schema markup and on-page SEO before anything goes live.</p></article>
+      <article class="proc reveal"><div class="n">05</div><h4>Maintain</h4><p>Deploy, monitor, patch, back up and keep improving. Shipping is the start of the job, not the end of it.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
 <section id="experience">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -298,15 +347,13 @@
       <h2 class="sec-title">Where I've worked</h2>
     </div>
 
-    <div class="timeline">
+    <div class="timeline" id="timeline">
       <article class="tl-item current reveal">
         <div class="tl-head">
           <h3 class="tl-role">Software Development Engineer</h3>
           <span class="tl-chip">Current</span>
         </div>
-        <div class="tl-meta">
-          <b>Webority Technologies</b> <span>·</span> <span>Gurugram, India</span> <span>·</span> <span>Nov 2023 — Present</span> <span>·</span> <span>Full-time</span>
-        </div>
+        <div class="tl-meta"><b>Webority Technologies</b><span>·</span><span>Gurugram, India</span><span>·</span><span>Nov 2023 — Present</span><span>·</span><span>Full-time</span></div>
         <ul class="tl-list">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>Designed, developed and deployed <strong>20+ scalable web applications and WordPress websites</strong> for clients across healthcare, finance, education and technology domains.</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>Built <strong>custom WordPress themes from scratch</strong> and customized plugins using hooks, filters and custom post types to meet client-specific requirements.</span></li>
@@ -324,12 +371,8 @@
       </article>
 
       <article class="tl-item reveal">
-        <div class="tl-head">
-          <h3 class="tl-role">Associate Software Engineer (Web Designer)</h3>
-        </div>
-        <div class="tl-meta">
-          <b>Recall IT Solution LLP</b> <span>·</span> <span>Agra, India</span> <span>·</span> <span>Mar 2023 — Aug 2023</span> <span>·</span> <span>Full-time</span>
-        </div>
+        <div class="tl-head"><h3 class="tl-role">Associate Software Engineer (Web Designer)</h3></div>
+        <div class="tl-meta"><b>Recall IT Solution LLP</b><span>·</span><span>Agra, India</span><span>·</span><span>Mar 2023 — Aug 2023</span><span>·</span><span>Full-time</span></div>
         <ul class="tl-list">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>Developed and maintained dynamic, responsive websites using HTML5, CSS3, JavaScript and Bootstrap.</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>Created and customized <strong>WordPress themes, plugins and web pages</strong> (including Elementor) for scalable, high-performance client sites.</span></li>
@@ -346,7 +389,7 @@
   </div>
 </section>
 
-<!-- ========== PYTHON PROJECTS ========== -->
+<!-- ================= PYTHON PROJECTS ================= -->
 <section id="projects">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -367,10 +410,7 @@
           <li>Responsive UI built with HTML5, CSS3, Bootstrap and JavaScript — reusing 3+ years of front-end experience.</li>
         </ul>
         <div class="feat-foot">
-          <a class="link-inline" href="https://github.com/Himanshu03-Dev" target="_blank" rel="noopener">
-            View on GitHub
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-          </a>
+          <a class="link-inline" href="https://github.com/Himanshu03-Dev" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
         </div>
       </article>
 
@@ -384,10 +424,7 @@
           <li>Endpoints tested in Postman with documented request/response formats for easy frontend integration.</li>
         </ul>
         <div class="feat-foot">
-          <a class="link-inline" href="https://github.com/Himanshu03-Dev" target="_blank" rel="noopener">
-            View on GitHub
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-          </a>
+          <a class="link-inline" href="https://github.com/Himanshu03-Dev" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
           <span class="tag-soon">In progress</span>
         </div>
       </article>
@@ -402,10 +439,7 @@
           <li>Exception handling, retries and rate limiting built in for reliable unattended execution.</li>
         </ul>
         <div class="feat-foot">
-          <a class="link-inline" href="https://github.com/Himanshu03-Dev" target="_blank" rel="noopener">
-            View on GitHub
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-          </a>
+          <a class="link-inline" href="https://github.com/Himanshu03-Dev" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
           <span class="tag-soon">In progress</span>
         </div>
       </article>
@@ -413,13 +447,13 @@
   </div>
 </section>
 
-<!-- ========== CLIENT WORK ========== -->
+<!-- ================= CLIENT WORK ================= -->
 <section id="work">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Production work</span>
       <h2 class="sec-title">20+ live client websites</h2>
-      <p class="sec-sub">Every site below is live in production. Built and deployed at Webority Technologies — custom WordPress themes, plugin customization, API integration, SEO and post-launch maintenance.</p>
+      <p class="sec-sub">Every site below is live in production. Built and deployed at Webority Technologies — custom WordPress themes, plugin customization, API integration, SEO and post-launch maintenance. Click any card for the detail.</p>
     </div>
 
     <div class="filters reveal" id="filters">
@@ -435,7 +469,7 @@
   </div>
 </section>
 
-<!-- ========== CREDENTIALS ========== -->
+<!-- ================= CREDENTIALS ================= -->
 <section id="credentials">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -447,54 +481,18 @@
       <div class="panel reveal">
         <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg> Certifications</h3>
         <ul class="cert-list">
-          <li>
-            <span class="ic">🐍</span>
-            <span>
-              <span class="t">Python, Data Science &amp; Django Programming</span>
-              <span class="s">E-Gain Classes (EduXGain) · Does not expire</span>
-            </span>
-          </li>
-          <li>
-            <span class="ic">⚙️</span>
-            <span>
-              <span class="t">C and C++ Programming</span>
-              <span class="s">E-Gain Classes (EduXGain)</span>
-            </span>
-          </li>
-          <li>
-            <span class="ic">🎨</span>
-            <span>
-              <span class="t">HTML and CSS — Certificate of Achievement</span>
-              <span class="s">W3docs</span>
-            </span>
-          </li>
-          <li>
-            <span class="ic">🚀</span>
-            <span>
-              <span class="t">20+ client websites delivered end-to-end</span>
-              <span class="s">Independently — from development to live deployment</span>
-            </span>
-          </li>
+          <li><span class="ic">🐍</span><span><span class="t">Python, Data Science &amp; Django Programming</span><span class="s">E-Gain Classes (EduXGain) · Does not expire</span></span></li>
+          <li><span class="ic">⚙️</span><span><span class="t">C and C++ Programming</span><span class="s">E-Gain Classes (EduXGain)</span></span></li>
+          <li><span class="ic">🎨</span><span><span class="t">HTML and CSS — Certificate of Achievement</span><span class="s">W3docs</span></span></li>
+          <li><span class="ic">🚀</span><span><span class="t">20+ client websites delivered end-to-end</span><span class="s">Independently — from development to live deployment</span></span></li>
         </ul>
       </div>
 
       <div class="panel reveal">
         <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg> Education</h3>
         <ul class="cert-list">
-          <li>
-            <span class="ic">🎓</span>
-            <span>
-              <span class="t">Bachelor of Computer Applications (BCA), Computer Science</span>
-              <span class="s">Dr. Bhimrao Ambedkar University, Agra · 2019 – 2022 · <strong>77%</strong></span>
-            </span>
-          </li>
-          <li>
-            <span class="ic">📚</span>
-            <span>
-              <span class="t">Relevant coursework</span>
-              <span class="s">Web Development · DBMS · Object-Oriented Programming · Data Structures · Computer Networks · Software Engineering</span>
-            </span>
-          </li>
+          <li><span class="ic">🎓</span><span><span class="t">Bachelor of Computer Applications (BCA), Computer Science</span><span class="s">Dr. Bhimrao Ambedkar University, Agra · 2019 – 2022 · <strong>77%</strong></span></span></li>
+          <li><span class="ic">📚</span><span><span class="t">Relevant coursework</span><span class="s">Web Development · DBMS · Object-Oriented Programming · Data Structures · Computer Networks · Software Engineering</span></span></li>
         </ul>
         <div class="tl-stack" style="margin-top:22px">
           <span class="chip">Self-taught web development</span>
@@ -506,7 +504,7 @@
   </div>
 </section>
 
-<!-- ========== CONTACT ========== -->
+<!-- ================= CONTACT ================= -->
 <section id="contact">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -521,10 +519,10 @@
           <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.26 4.86L2 22l5.3-1.23A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></span>
           <span><span class="k">WhatsApp</span><span class="v">+91 87550 17490</span></span>
         </a>
-        <a class="cc" href="mailto:drajputhimanshu704@gmail.com">
+        <button class="cc" id="copyMail">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
-          <span><span class="k">Email</span><span class="v">drajputhimanshu704@gmail.com</span></span>
-        </a>
+          <span><span class="k">Email — click to copy</span><span class="v">drajputhimanshu704@gmail.com</span></span>
+        </button>
         <a class="cc" href="https://www.linkedin.com/in/himanshu-dev-3a57a1219" target="_blank" rel="noopener">
           <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></span>
           <span><span class="k">LinkedIn</span><span class="v">/in/himanshu-dev</span></span>
@@ -543,12 +541,12 @@
         <div class="form-row">
           <div class="field">
             <label for="f-name">Your name <span class="req">*</span></label>
-            <input id="f-name" name="name" type="text" placeholder="Recruiter / HR name" required>
+            <input id="f-name" type="text" placeholder="Recruiter / HR name" required>
             <span class="err">Please enter your name</span>
           </div>
           <div class="field">
             <label for="f-company">Company <span class="req">*</span></label>
-            <input id="f-company" name="company" type="text" placeholder="Company name" required>
+            <input id="f-company" type="text" placeholder="Company name" required>
             <span class="err">Please enter your company</span>
           </div>
         </div>
@@ -556,11 +554,11 @@
         <div class="form-row">
           <div class="field">
             <label for="f-role">Role you're hiring for</label>
-            <input id="f-role" name="role" type="text" placeholder="e.g. Python / Django Developer">
+            <input id="f-role" type="text" placeholder="e.g. Python / Django Developer">
           </div>
           <div class="field">
             <label for="f-type">Opportunity type</label>
-            <select id="f-type" name="type">
+            <select id="f-type">
               <option>Full-time</option>
               <option>Contract</option>
               <option>Freelance project</option>
@@ -573,28 +571,28 @@
         <div class="form-row">
           <div class="field">
             <label for="f-loc">Job location</label>
-            <input id="f-loc" name="location" type="text" placeholder="e.g. Gurugram / Remote">
+            <input id="f-loc" type="text" placeholder="e.g. Gurugram / Remote">
           </div>
           <div class="field">
             <label for="f-contact">Your phone or email</label>
-            <input id="f-contact" name="contact" type="text" placeholder="So I can reach you back">
+            <input id="f-contact" type="text" placeholder="So I can reach you back">
           </div>
         </div>
 
         <div class="field">
           <label for="f-msg">Message <span class="req">*</span></label>
-          <textarea id="f-msg" name="message" placeholder="Brief about the role, tech stack, CTC range, notice period expectation…" required></textarea>
+          <textarea id="f-msg" placeholder="Brief about the role, tech stack, CTC range, notice period expectation…" required></textarea>
           <span class="err">Please write a short message</span>
         </div>
 
         <div class="form-actions">
-          <button type="submit" class="btn btn-wa">
+          <button type="submit" class="btn btn-wa magnetic">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.26 4.86L2 22l5.3-1.23A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
             Send to WhatsApp
           </button>
           <button type="button" class="btn btn-ghost" id="mailBtn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-            Send as Email instead
+            Send as email instead
           </button>
         </div>
 
@@ -607,10 +605,9 @@
   </div>
 </section>
 
-<!-- ========== FOOTER ========== -->
 <footer>
   <div class="wrap foot-inner">
-    <p>© <span id="yr"></span> Himanshu Dev · Built with plain HTML, CSS &amp; JavaScript.</p>
+    <p>© <span id="yr"></span> Himanshu Dev · Designed &amp; coded by me.</p>
     <nav class="foot-links" aria-label="Footer">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -620,6 +617,43 @@
     </nav>
   </div>
 </footer>
+
+<!-- ================= MODAL ================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal-bd" data-close></div>
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="work-cat" id="mCat"></span>
+    <h3 id="mTitle"></h3>
+    <p class="host" id="mHost"></p>
+    <p id="mDesc"></p>
+    <h4>What I worked on</h4>
+    <ul class="modal-list" id="mList"></ul>
+    <h4>Stack</h4>
+    <div class="tl-stack" id="mStack" style="margin-bottom:22px"></div>
+    <a class="btn btn-primary" id="mLink" target="_blank" rel="noopener">
+      Open live site
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- ================= COMMAND PALETTE ================= -->
+<div class="cmdk" id="cmdk" role="dialog" aria-modal="true" aria-label="Quick menu">
+  <div class="cmdk-bd" data-cmd-close></div>
+  <div class="cmdk-box">
+    <div class="cmdk-input">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="cmdInput" type="text" placeholder="Jump to a section or run an action…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="cmdk-list" id="cmdList"></div>
+    <div class="cmdk-foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> select</span><span><kbd>esc</kbd> close</span></div>
+  </div>
+</div>
+
+<div id="toasts" aria-live="polite"></div>
 
 <a class="wa-float" href="https://wa.me/918755017490?text=Hi%20Himanshu%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35zM12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.26 4.86L2 22l5.3-1.23A9.93 9.93 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
